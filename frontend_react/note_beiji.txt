@@ -1,0 +1,9 @@
+use sudo to create project folder: 'sudo npx create-react-app folder_name'
+
+# after creation can not make changes cuz not efficient permission
+go to higher level and change permission for this folder
+sudo chmod -R 777 frontend_react
+
+# to change on port number, edit under pacakge,json
+"scripts": {
+    "start": "react-scripts start --port 3001"}
