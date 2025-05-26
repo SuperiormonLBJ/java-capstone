@@ -65,12 +65,13 @@ This is a terminal-based banking application developed as part of the UOB TDP Ca
 2. **Create the Database Tables**:
 
    ```bash
-   psql -U capstone2 -d capstone2 -p 5432 -f create_db_via_django.sql
+   psql -h localhost -U capstone2 -d capstone2 -p 5433 -f create_db_via_django.sql
    ```
 
 3. **Populate the Database**:
 
    ```bash
+   cd capstone
    mvn exec:java -Dexec.mainClass="capstone.PopulateData"
    ```
 
